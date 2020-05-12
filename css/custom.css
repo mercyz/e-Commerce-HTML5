@@ -310,6 +310,23 @@ ul, li, ol {
   padding: 50px;
 }
 
+.btn {
+  padding: 12px 35px;
+  line-height: normal;
+  cursor: pointer;
+  border-width: 1px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.btn:focus,
+.btn:hover,
+.btn.active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: medium none;
+}
+
 .btn-fill-out {
   background: transparent;
   color: #fff;
@@ -345,5 +362,65 @@ ul, li, ol {
 .btn-fill-out:hover:before,
 .btn-fill-out:hover:after {
   width: 0;
+}
+
+.indicators_style {
+  margin-bottom: 15px;
+}
+
+.indicators_style li {
+  width: 10px;
+  height: 10px;
+  background-color: #333;
+  border: 0;
+  margin: 8px;
+  position: relative;
+}
+
+.indicators_style li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border: 2px solid #333;
+  margin: -4px;
+}
+
+.indicators_style li.active {
+  background-color: #FF324D;
+}
+
+.indicators_style li.active::before {
+  border-color: #FF324D;
+}
+
+.section {
+  position: relative;
+  padding: 100px 0;
+}
+
+.pb-5x {
+  padding-bottom: 50px;
+}
+
+.heading_tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+  position: relative;
+  border-bottom: 1px solid #ddd;
 }
 /*# sourceMappingURL=custom.css.map */
