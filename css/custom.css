@@ -449,4 +449,98 @@ ul, li, ol {
   text-align: center;
   text-transform: capitalize;
 }
+
+.item__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item {
+  width: 30%;
+  margin: 0 8px;
+  -webkit-box-shadow: 1px 2px 3px #ddd;
+          box-shadow: 1px 2px 3px #ddd;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.item__image {
+  position: relative;
+  overflow: hidden;
+}
+
+.item__info {
+  padding: 15px;
+}
+
+.item__info--title {
+  color: #292b2c;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: .5rem;
+  line-height: 1.2;
+}
+
+.item__info--price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.item__button {
+  margin-top: 14px;
+}
+
+.item .price {
+  color: #FF324D;
+  font-weight: 600;
+}
+
+.item__image::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+}
+
+.item:hover .item__image::before {
+  opacity: 1;
+}
+
+.item-btn {
+  background: transparent;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #FF324D;
+  border-radius: 2px;
+  color: #FF324D;
+  font-weight: 600;
+  font-size: .90rem;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.item-btn:hover {
+  background: #FF324D;
+  color: #fff;
+}
 /*# sourceMappingURL=custom.css.map */
