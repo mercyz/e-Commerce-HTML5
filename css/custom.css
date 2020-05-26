@@ -423,4 +423,30 @@ ul, li, ol {
   position: relative;
   border-bottom: 1px solid #ddd;
 }
+
+.heading__title h2 {
+  position: relative;
+  z-index: 9;
+  margin: 0;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #292b2c;
+  font-family: "Roboto";
+}
+
+.tab_heading .nav-tabs {
+  border-bottom: 0;
+}
+
+.tab_heading .nav-tabs li.nav-item a.active {
+  color: #FF324D;
+}
+
+.tab_heading .nav-tabs li.nav-item a {
+  padding: 0px 15px;
+  border: 0;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+}
 /*# sourceMappingURL=custom.css.map */
