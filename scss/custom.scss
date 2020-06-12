@@ -462,3 +462,71 @@ ul,li,ol{
     background:$pink-color;
     color:#fff;
 }
+.active_tab{
+    display: block !important;
+}
+.tab-pan{
+    display: none;
+}
+.single_banner{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    &_info{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        padding: 20px;
+        -moz-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 50%;
+    }
+}
+.single_bn_title {
+    font-weight: bold;
+    font-size: 32px;
+}
+.single_bn_link {
+    position: relative;
+}
+.pb_20{
+    padding-bottom: 20px;
+}
+.sale_banner {
+    padding: 0 10px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.small_pt{
+    padding-top: 50px;
+}
+.featured_container{
+    width: 356.667px;
+    margin-right: 20px;
+}
+.product{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 30px;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 7px rgba(0,0,0,0.1);
+
+    &_img{
+        position: relative;
+        overflow: hidden;
+    }
+    &_info{
+        padding: 0px 0 0 15px;
+        text-align: left;
+        max-width: 70%;
+        flex: 0 0 70%;
+    }
+}
+.flex{
+    display: flex;
+}
